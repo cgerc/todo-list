@@ -1,7 +1,7 @@
-.d-hover-block {
+.task-item .delete-btn {
   display: none;
 }
 
-.list-group-item:hover .d-hover-block {
-  display: block;
+.task-item:hover .delete-btn {
+  display: inline-block;
 }
