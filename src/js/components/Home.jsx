@@ -32,7 +32,7 @@ const Home = () => {
   };
 
   return (
-    <div className="d-flex flex-column align-items-center">
+    <div className="d-flex flex-column align-items-center mt-3">
       <h1>To Do List</h1>
 
       <div className="mb-3 w-50">
@@ -44,7 +44,6 @@ const Home = () => {
           onChange={handleChange}
           onKeyPress={handleKeyPress}
           placeholder="Agregar tarea"
-          aria-label="New task"
         />
       </div>
 
@@ -71,6 +70,7 @@ const Home = () => {
           ))
         )}
       </ul>
+      <p className='task-counter text-muted text-center mt-3'>{tasks.length} item{tasks.length !== 1 ? 's' : ''} left</p>
     </div>
   );
 };

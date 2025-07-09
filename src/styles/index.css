@@ -1,7 +1,27 @@
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  
+}
+
+
 .task-item .delete-btn {
   display: none;
 }
 
 .task-item:hover .delete-btn {
   display: inline-block;
+}
+
+.task-item {
+  transition: box-shadow 0.3s ease; 
+}
+
+.task-counter {
+  font-size: 0.9rem; 
+  color: #6c757d; 
+  margin-top: 1rem; 
+  padding: 0.5rem; 
 }
