@@ -32,7 +32,7 @@ const Home = () => {
   };
 
   return (
-    <div className="d-flex flex-column align-items-center mt-3">
+    <div className="d-flex flex-column align-items-center mt-3 shadow-lg">
       <h1>To Do List</h1>
 
       <div className="mb-3 w-50">
@@ -47,7 +47,7 @@ const Home = () => {
         />
       </div>
 
-      <ul className="list-group w-50">
+      <ul className="list-group w-50 shadow-lg">
         {tasks.length === 0 ? (
           <li className="list-group-item text-muted">
             No hay tareas, añadir tareas
@@ -70,7 +70,7 @@ const Home = () => {
           ))
         )}
       </ul>
-      <p className='task-counter text-muted text-center mt-3'>{tasks.length} item{tasks.length !== 1 ? 's' : ''} left</p>
+      <p className='task-counter text-muted text-center mt-3 shadow-lg'>{tasks.length} item{tasks.length !== 1 ? 's' : ''} left</p>
     </div>
   );
 };
